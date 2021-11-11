@@ -1,0 +1,145 @@
+<html>
+<body bgcolor="gray">
+<center><h2 id="start">WEB</h2></center>
+
+<a href="#end">End</a><br>
+<a href="#history">History</a><br>
+<a href="#websecurity">Websecurity</a><br>
+<a href="#http">HTTP</a><br>
+
+A web server is computer software and underlying hardware that accepts requests via HTTP, the network protocol created to distribute web content, or its secure variant HTTPS. A user agent, commonly a web browser or web crawler, initiates communication by making a request for a specific resource using HTTP, and the web server responds with the content of that resource or an error message. The web server can also accept and store resources sent from the user agent if configured to do so.[1] [2]
+
+A web server can be a single computer, or even an embedded system such as a router with a built-in configuration interface, but high-traffic websites typically run web servers on fleets of computers designed to handle large numbers of requests for documents, multimedia files and interactive scripts.
+
+A resource sent from a web server can be a preexisting file (static content) available to the web server, or it can be generated at the time of the request (dynamic content) by another program that communicates with the web server program. The former usually can be served faster and can be more easily cached for repeated requests, while the latter supports a broader range of applications.
+
+Technologies such as REST and SOAP, which use HTTP as a basis for general computer-to-computer communication, have extended the application of web servers well beyond their original purpose of serving human-readable pages.
+Contents
+
+
+
+<p id="history"><h1>Webserver History</h1>
+The world's first web server, a NeXT Computer workstation with Ethernet, 1990. The case label reads: "This machine is a server. DO NOT POWER IT DOWN!!"
+Sun's Cobalt Qube 3 – a computer server appliance (2002, discontinued)
+
+In March 1989 Sir Tim Berners-Lee proposed a new project to his employer CERN, with the goal of easing the exchange of information between scientists by using a hypertext system.[3][4] The project resulted in Berners-Lee writing two programs in 1990:
+
+    a Web browser called WorldWideWeb;
+    the world's first Web server, later known as CERN httpd, which ran on NeXTSTEP.
+
+Between 1991 and 1995, the simplicity and effectiveness of early technologies used to surf and exchange data through the World Wide Web helped to port them to many different operating systems and spread their use among scientific organizations and universities, and subsequently to the industry.
+
+In those early years new implementations of both web browsers and web servers (i.e. NCSA HTTPd, etc.) were developed by various organizations, including private ones, thus starting a keen competition that since then has grown exponentially (see also Market share of web server software).
+
+In 1994 Berners-Lee decided to constitute the World Wide Web Consortium (W3C) to regulate the further development of the many technologies involved (HTTP, HTML, etc.) through a standardization process.
+Technical overview<br>
+<img src="web.jpg" width="200" height="200" align="right">
+
+
+<p>
+Basic common features
+
+Although web server programs differ in how they are implemented, most of them offer the following basic common features.
+
+    Static content serving: to be able to serve static content (web files) to clients via HTTP protocol.
+    HTTP: support for one or more versions of HTTP protocol in order to send versions of HTTP responses compatible with versions of client HTTP requests, e.g. HTTP/1.0, HTTP/1.1 (eventually also with encrypted connections HTTPS), plus, if available, HTTP/2, HTTP/3.
+    Logging: usually web servers have also the capability of logging some information, about client requests and server responses, to log files for security and statistical purposes.
+
+A few other popular features (only a very short selection) are the following ones.
+
+    Dynamic content serving: to be able to serve dynamic content (generated on the fly) to clients via HTTP protocol.
+    Virtual hosting: to be able to serve many websites (domain names) using only one IP address.
+    Authentication: optional support for authorization request (request of user name and password) before allowing access to some or all kind of website resources.
+    Large file support: to be able to serve files whose size is greater than 2 GB on 32 bit OS.
+    Bandwidth throttling: to limit the speed of content responses in order to not saturate the network and to be able to serve more clients;
+    Rewrite engine: to map beautified parts of URLs (found in client requests) to their real names.
+
+Path translation
+
+Web servers are able to map the path component of a Uniform Resource Locator (URL found in most HTTP request messages) into:
+
+    a local file system resource (for static requests);
+    an internal or external program name (for dynamic requests).
+
+
+
+Benchmarking
+
+Performances of a web server are typically benchmarked by using one or more of the available automated load testing tools.
+Load limits
+
+A web server (program installation) usually has pre-defined load limits for each combination of operating conditions, also because it is limited by OS resources and because it can handle only a limited number of concurrent client connections (usually between 2 and several tens of thousands for each active web server process, see also the C10k problem and the C10M problem).
+
+When a web server is near to or over its load limits, it gets overloaded and so it may become unresponsive.
+Causes of overload
+
+
+   <br> Using many web servers (computers) that are grouped together behind a load balancer so that they act or are seen as one big web server.
+    Adding more hardware resources (i.e. RAM, fast disks) to each computer.
+    Using more efficient computer programs for web servers (see also: software efficiency, etc.).
+    Using the most efficient Web Server Gateway Interface to process dynamic requests (spawning one or more external programs everytime a dynamic page is retrieved, kills performances).
+    
+</p>
+
+<p>
+Nancy J. Yeager; Robert E. McGrath (1996). Web Server Technology. ISBN 1-55860-376-X. Retrieved 22 January 2021.
+William Nelson; Arvind Srinivasan; Murthy Chintalapati (2009). Sun Web Server: The Essential Guide. ISBN 978-0-13-712892-1.
+ Retrieved 14 October 2021.
+Zolfagharifard, Ellie (24 November 2018). "'Father of the web' Sir Tim Berners-Lee on his plan to fight fake news". The Telegraph. ISSN 0307-1235. Retrieved 1 February 2019.
+"History of Computers and Computing, Internet, Birth, The World Wide Web of Tim Berners-Lee". history-computer.com. Retrieved 1 February 2019.
+"Mapping URLs to Filesystem Locations". Apache: HTTPd server project. 2021. Retrieved 19 October 2021.
+Omid H. Jader; Subhi R. M. Zeebaree; Rizgar R. Zebari (12 December 2019). "A State Of Art Survey For Web Server Performance Measurement And Load Balancing Mechanisms" (PDF). IJSTR: INTERNATIONAL JOURNAL OF SCIENTIFIC & TECHNOLOGY RESEARCH. Retrieved 4 November 2021.
+Jussara M. Almeida; Virgilio Almeida; David J. Yates (7 July 1997). "WebMonitor: a tool for measuring World Wide Web server performance". First Monday. Retrieved 4 November 2021.
+Fisher, Tim; Lifewire. "Getting a 502 Bad Gateway Error? Here's What to Do". Lifewire. Retrieved 1 February 2019.
+"What is a 502 bad gateway and how do you fix it?". IT PRO. Retrieved 1 February 2019.
+Fisher, Tim; Lifewire. "Getting a 503 Service Unavailable Error? Here's What to Do". Lifewire. Retrieved 1 February 2019.
+Fisher, Tim; Lifewire. "Getting a 504 Gateway Timeout Error? Here's What to Do". Lifewire. Retrieved 1 February 2019.
+Vaughan-Nichols, Steven J. "Apache and IIS' Web server rival NGINX is growing fast". ZDNet. Retrieved 1 February 2019.
+
+    Hadi, Nahari (2011). Web commerce security: design and development. Krutz, Ronald L. Indianapolis: Wiley Pub. ISBN 9781118098899. OCLC 757394142.
+
+External links
+
+    Mozilla: what is a web server?
+    Netcraft: news about web server survey
+
+    vte
+
+
+    اردو
+   </p>
+
+Edit links
+
+    This page was last edited on 9 November 2021, at 12:35 (UTC).
+    Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+    Privacy policy
+    About Wikipedia
+    Disclaimers
+    Contact Wikipedia
+    Mobile view
+    Developers
+    Statistics
+    Cookie statement
+
+    Wikimedia Foundation
+    Powered by MediaWiki
+<br>
+
+<h2 id="websecurity">web security</h2>
+
+Web security must be a critical priority for every organization. Along with email, the web is one of the top vectors for cyberattacks. The web and the use of DNS services specifically are part of 91% of all malware attacks, and email and web together are a key part for 99% of successful breaches.
+
+While the importance of web security is undisputed, protecting against web security threats grows more challenging each day. From thwarting attacks to dealing with limits in skills and resources, IT security departments face serious challenges when trying to secure the web.
+
+In the past, security teams have deployed a collection of on-premises solutions to manage email and web security. But increasingly organizations are turning to comprehensive email and web security solutions – via integrated, cloud-based technologies that simplify the task and reduce the cost of reducing risk. And because attackers often leverage email and web channels together, a seamless and scalable strategy for protecting both is essential.
+
+<br>
+<h2 id="http">HTTP</h2><br>
+<img src="ww.jpeg" width="200" height="200" align="right"><br>
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.<br>
+<a href="#start">top</a>
+<h3 id=end>The end</h3>
+</body>
+</html>
