@@ -1,0 +1,81 @@
+<head>
+    <title>
+        Job application
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="job.jpg">
+
+    <h2>Job Application</h2>
+    <form>
+        <table>
+        
+            <tr>
+                <th>Name</th>
+                <th colspan="2">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name"> 
+                </th>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea placeholder="Address" name="Address" id="" cols="20" rows="3"></textarea></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</td>
+    
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td><input type="date" name="age" id="age"></td>
+    
+            </tr>
+            <tr>
+                <th>Qualification</th>
+                <td><select name="qualification" id="stud">
+                    <option value="pg">PG</option>
+                    <option value="ug" selected>UG</option>
+                    <option value="+2">PlusTwo</option>
+                    <option value="10">SSLC</option>
+                    </select>
+                </td>
+    
+            </tr>
+            <tr>
+                <th>Skills</th>
+                <td colspan="3" >
+                    <input type="checkbox" name="skill">Communication
+                    <input type="checkbox" name="skill">Full stack developer
+                    <input type="checkbox" name="skill">Networking
+                    <input type="checkbox" name="skill">Digital Marketing
+                    <!-- <input type="checkbox" name="skill">DBMS -->
+                </td>
+            </tr>
+            <tr>
+                <th>Contact Info:</th>
+                <th colspan="2"><input type="number" name="phone" id="number" placeholder="Phone no:">
+                <input type="email" name="email" id="mail" placeholder="E-mail"></th>
+    
+            </tr>
+            <tr>
+                <th>Resume</th>
+                <td colspan="2">&nbsp;<input type="file" name="resume" id="resume"></td>
+    
+            </tr>
+        </table>
+        <p align="center">
+        <input type="checkbox" checked>I hereby declare that the details and information given are complete and true to the best of my knowledge.</p>
+        <br>
+        <div class="footer">
+            <input type="submit" value="submit" id="button">
+            &nbsp;&nbsp;
+            <input type="reset" value="reset" id="button">
+        </div>
+
+    </form>
+    
+</body>
+</html>
