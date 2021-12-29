@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+.top{
+
+    height:40px;
+    width: 100%;
+    background-color: #98b4d6;
+    border: 3px solid #144a80 ; 
+    padding-top: 0px; 
+}
+
+#logo{
+    color: #3ab0e2;
+    display: inline-block;
+    font-size: 40px;
+    padding-top: 0px;
+    padding-left: 10px;
+    float: left ;
+    
+}
+#txt{
+    font-family: Times New Roman;
+  color: #3671B9;
+  margin-left: 10px;
+  font-size: 24px;
+  padding-left: 10px;  
+  padding-top: 100pt;
+  font-size: 22x;
+
+}
+li{
+    list-style-type: none;
+    float:right;
+    font-size: 20px;
+    text-align: left;
+}
+.b{
+    font-size: 15px;
+    background-color:#98b4d6 ;
+    border: 0cm;
+    padding-right: 20px;
+    float:right;
+    padding-top: 10px;
+    padding: left 0;
+}
+.background1{
+    background-color: #F7F7F7;
+    height: 780px;
+    width: 100%;
+    padding-top: 50px;
+    
+}
+.middle{
+    background-color:#ffffff;
+    height: 725px;
+    width: 73%;
+    margin-top: 42px;
+    margin-left: 20px;
+    margin-right: 0px;
+    float:left;
+    border: 1pt solid #000408 ; 
+    
+
+}
+.mid-a{
+    background-color: #3671B9;
+    height:55px;
+    widows: 80px;
+     
+}
+.mid-h{
+    color: #ffffff;
+    font-size: 26px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.content{
+    padding-top: 20px;
+    padding-left: 40px;
+    text-align:start;
+}
+.c-h1{
+    color: #73B0E2;
+    padding-top: 46px;
+    padding-left: 100px;
+}
+#logo1{
+    display: inline-block;
+    font-size: 40px;
+    padding-left: 10px;
+    float: left ;
+}   
+.form{
+    margin-right: 15px;
+    margin-left: 0px;
+    margin-top: 41px;
+    height: 300px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    float: right;
+    border: 1px solid #6FACF5;
+    
+}
+.form-a{
+    background-color: #6FACF5;
+    padding-left: 10px;
+    height: 40px;
+    padding-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.form-b{
+    
+    padding-left: 1px;
+    padding-right: 0px;
+    color: #98b4d6 ;
+    height: 8%;
+    width: 80%;
+}
+.footer{
+    float: inline-end;
+    height: 35px;
+    width: 100%;
+    background-color: #0477A4;
+
+}
+.a{
+    color: white;
+    padding-left: 33%;
+}
