@@ -1,0 +1,6 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `product`.`saleitem_AFTER_INSERT` AFTER INSERT ON `saleitem` FOR EACH ROW
+BEGIN
+update product
+set qtyinstock=qtyinstock-new.qty
+where product.pid=new.pid;
+END
